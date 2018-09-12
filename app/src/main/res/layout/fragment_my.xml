@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.MyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/divider_background">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_my_background" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="90dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="90dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/my_safe"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@mipmap/ic_my_safe"
+                        android:gravity="center"
+                        android:text="安全小贴士"
+
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/my_rate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@mipmap/ic_my_rate"
+                        android:gravity="center"
+                        android:text="我的免息卷"
+
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/my_progess"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@mipmap/ic_my_progess"
+                        android:gravity="center"
+                        android:text="贷款进度"
+
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/my_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:drawableTop="@mipmap/ic_my_photo"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="点击登录"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider_background" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider_background" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider_background" />
+
+    <com.money.loan.view.ProfileEdit
+        android:id="@+id/my_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isarrows="true"
+        app:lifeIamge="@mipmap/ic_my_feedback"
+        app:type="意见反馈"
+        app:value=" ">
+
+    </com.money.loan.view.ProfileEdit>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/divider_background" />
+
+    <com.money.loan.view.ProfileEdit
+        android:id="@+id/my_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isarrows="true"
+        app:lifeIamge="@mipmap/ic_my_setting"
+        app:type="设置"
+        app:value=" ">
+
+    </com.money.loan.view.ProfileEdit>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider_background" />
+
+
+</LinearLayout>
